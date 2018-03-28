@@ -1,0 +1,379 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Your Name!
+ Author URI:   http://example.com
+ Template:     accelerate-theme
+ Version:      2.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+/*Homepage*/
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+.primary-navigation li.current-menu-item{
+    font-weight: bold;
+}
+.button {
+    background: #45ac9d;
+}
+
+/* featured work and services on homepage */
+.featured-work .site-content,
+.featured-services .site-content {
+    margin: 6em auto;
+}
+.featured-work h4,
+.featured-services h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2.25em;
+}
+.homepage-featured-work,
+.homepage-featured-services {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.individual-featured-work,
+.individual-featured-service {
+    margin-bottom: 2em;
+}
+.individual-featured-work a,
+.individual-featured-service a {
+	display: block;
+}
+.individual-featured-work h3,
+.individual-featured-service h3 {
+    font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+}
+
+/* blog post and twitter widget on homepage */
+.blog-post, .home .widget-area {
+    margin-bottom: 8em;
+}
+.blog-post h4, .home .widget-area h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+	text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+.blog-post h3, .home .widget-title {
+	font-size: 1.5em;
+}
+.read-more-link {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+ul.tweets {
+    list-style: none;
+    margin-left: 0;
+}
+.tweets .stt-em a {
+    font-size: .8em;
+}
+/*END Homepage*/
+
+/*Case Studies*/
+.case-study {
+    clear: both;
+}
+.case-study h2 {
+    font: 600 1.5em/1.5 'Open Sans', Arial, sans-serif;
+}
+.case-study h4 {
+    font: 400 .875em/1.25 'Open Sans', Arial, sans-serif;
+    margin: 1em 0;
+}
+.case-study h4 span {
+    color: #878787;
+}
+.case-study-sidebar p {
+    margin: 2em 0;
+}
+div.case-study-images {
+    margin-top: 3em;
+}
+div.case-study-images img {
+    width: 100%;
+	margin-bottom: 3.125em;
+	border: 1px solid #dddddd;
+}
+/*END Case Studies*/
+
+/*Contact Page */
+.contact-page .main-content {
+    width: 70%;
+    max-width: 38em;
+    margin: 0 auto;
+    flex-grow: 0;
+}
+.contact-page h2 {
+     font-size: 1.5em;
+}
+.nf-form-fields-required, .ninja-forms-req-symbol {
+    display: none;
+}
+.nf-field-label label {
+    font-size: .9em;
+}
+nf-field input[type="button"] {
+    float: right;
+    background: #45ac9d;
+}
+/*END Contact Page */
+
+/*About Page*/
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right bottom / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 5em;
+    padding: 2em 0;
+    text-align: center;
+}
+.about-page .main-content {
+	color: #fff;
+    width: 70%;
+    max-width: 30em;
+	margin: 0 auto;
+    padding-bottom: 2em;
+}
+.about-page .main-content h2 {
+    font: 600 1.5em/1.75 'Open Sans', Arial, sans-serif;
+	color: #fff;
+}
+
+.services .site-content {
+    display: block;
+}
+.our-services section {                        /*could also use .individual-service*/
+    margin: 4em auto;
+}
+.our-services section h2 {                    /*could also use .individual-service h2*/
+    font: 600 1.5em/1.5 'Open Sans', Arial, sans-serif;
+    margin: 0 0 .5em;
+}
+.our-services section figure {                /*could also use .individual-service figure*/
+    text-align: center;
+    margin-bottom: 2em;
+}
+.contact-button {
+    border-top: 1px solid #bfbfbf;
+    text-align: center;
+    padding: 2em 0;
+}
+.contact-button h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 1em 0;
+}
+/*END About Page*/
+
+/* Sidebar */
+#sidebar .widget {
+    border-bottom: 1px solid #BFBFBF;
+    padding: 1.75em 1.8em;
+}
+#sidebar .widget:last-of-type {
+    border-bottom: none;
+}
+.mc4wp-form-fields label {
+    display: none;
+    font: 600 .875em/1.5 'Open Sans', Arial, sans-serif;
+}
+.mc4wp-form-fields input::placeholder {
+    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+    font-style: italic;
+}
+.mc4wp-form-fields input {
+    width: 100%;
+}
+.mc4wp-form-fields input[type="submit"] {
+    background: #45ac9d;
+    padding: 0;
+}
+/* END Sidebar */
+
+/*404 Page*/
+.error404 .main-content {
+    max-width: 44em;
+    margin: 2em auto;
+}
+.error404 .main-content h1,
+.error404 .main-content a {
+    color: #45ac9d;
+    margin-top: 0;
+}
+.error404 .main-content h1 {
+    font: 400 2.5em/3 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+.error404 figure {
+    text-align: center;
+}
+/*END 404 Page*/
+
+/*Accessibility*/
+/* Text meant only for screen readers. */
+.screen-reader-text{
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.screen-reader-text:focus{
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus{
+	outline: 0;
+}
+/*END Accessibility*/
+
+/*Footer*/
+ul.social-media-menu {
+    text-align: right;
+}
+ul.social-media-menu li {
+	display: inline-block;
+}
+.social-media-menu li a:before {
+    display: inline-block;
+    font-family: 'Fontawesome';
+    content: '\f0a9';
+    font-size: 1.25rem;
+    padding: .3em;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: #3b3b3b;
+}
+.social-media-menu li a[href*="mailto"]::before{ content: '\f0e0'; }
+.social-media-menu li a[href*="facebook.com"]::before{ content: '\f09a'; }
+.social-media-menu li a[href*="twitter.com"]::before{ content: '\f099'; }
+.social-media-menu li a[href*="dribbble.com"]::before{ content: '\f17d'; }
+.social-media-menu li a[href*="plus.google.com"]::before{ content: '\f0d5'; }
+.social-media-menu li a[href*="pinterest.com"]::before{ content: '\f0d2'; }
+.social-media-menu li a[href*="github.com"]::before{ content: '\f09b'; }
+.social-media-menu li a[href*="tumblr.com"]::before{ content: '\f173'; }
+.social-media-menu li a[href*="youtube.com"]::before{ content: '\f167'; }
+.social-media-menu li a[href*="flickr.com"]::before{ content: '\f16e'; }
+.social-media-menu li a[href*="vimeo.com"]::before{ content: '\f194'; }
+.social-media-menu li a[href*="instagram.com"]::before{ content: '\f16d'; }
+.social-media-menu li a[href*="linkedin.com"]::before{ content: '\f0e1'; }
+.social-media-menu li a[href*="codepen"]::before{ content: '\f1cb'; }
+/*END Footer*/
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .featured-work .site-content,
+    .featured-services .site-content {
+        display: block;
+        margin: auto auto 3em;
+    }
+    .individual-featured-work,
+    .individual-featured-service {
+    	display: table-cell;
+        padding: 0 .5em;
+    }
+    .blog-post {
+    	width: 50%;
+        float: left;
+        padding-right: 2em;
+        margin-bottom: 2em;
+    }
+    .home .widget-area {
+    	width: 50%;
+        float: right;
+        padding-left: 2em;
+        margin-bottom: 2em;
+    }
+
+    aside.case-study-sidebar {
+    	float: left;
+    	width: 34%;
+    	margin: 0 6% 0 0;
+    }
+    div.case-study-images {
+    	float: left;
+    	width: 60%;
+    }
+
+    #nf-field-1-container {
+        float: left;
+        width:48%;
+    }
+    #nf-field-2-container {
+        float: right;
+        width:48%;
+        clear: none;
+    }
+
+    .our-services section {                                        /*could also use .individual-service*/
+        display: flex;
+        align-items: center;
+    }
+    .our-services section:nth-child(even) {            /*could also use .individual-service:nth-child(even)*/
+        flex-direction: row-reverse;
+    }
+    .our-services section figure {                            /*could also use .individual-service figure*/
+        min-width: 12em;
+        margin-right: 4em;
+        margin-bottom: 0;
+    }
+    .our-services section:nth-child(even) figure {            /*could also use .individual-service:nth-child(even) figure*/
+        margin-left: 2em;
+        margin-right: 0;
+    }
+    .contact-button {
+        padding: 4em 0 2em;
+    }
+    .contact-button h2 {
+        display: inline;
+        margin-right: 2em;
+    }
+
+    .error404 .main-content {
+        display: flex;
+        align-items: center;
+    }
+    .error404 figure {
+        width: 25%;
+        margin-right: 10%;
+    }
+    .error404 aside {
+        width: 65%;
+    }
+}
