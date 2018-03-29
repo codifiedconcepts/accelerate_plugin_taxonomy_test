@@ -21,7 +21,7 @@ function create_services_post_types() {
             'public' => true,
             'has_archive' => false,
 			'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
-            'taxonomies' => array( 'post_tag', 'category' ),
+            //'taxonomies' => array( 'post_tag', 'category' ),  //Comment out if you don't want Category and Tags as options and just add custom taxonomy below
             'rewrite' => array( 'slug' => 'our-services' ),
         )
     );
@@ -48,14 +48,5 @@ function services_register_taxonomy() {
     	) );
 }
 add_action( 'init', 'services_register_taxonomy' );
-
-//Remove generic "Categories" and "Tags" submenus from the custom post type
-function services_remove_menu_pages() {
-	// remove "Categories"
-    remove_submenu_page( 'edit.php?post_type=our_services', 'edit-tags.php?taxonomy=category&amp;post_type=our_services');
-	// remove "Tags"
-	remove_submenu_page( 'edit.php?post_type=our_services', 'edit-tags.php?taxonomy=post_tag&amp;post_type=our_services' );
-}
-add_action( 'admin_menu', 'services_remove_menu_pages', 999 );
 
 ?>
