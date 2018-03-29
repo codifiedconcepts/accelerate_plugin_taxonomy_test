@@ -22,7 +22,7 @@ function create_services_post_types() {
             'has_archive' => false,
 			'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
             //'taxonomies' => array( 'post_tag', 'category' ),  //Comment out if you don't want Category and Tags as options and just add custom taxonomy below
-            'rewrite' => array( 'slug' => 'our-services' ),
+            //'rewrite' => array( 'slug' => 'our-services' ),
         )
     );
 }
@@ -43,10 +43,54 @@ function services_register_taxonomy() {
                 'new_item_name' => __( 'New Service Category')
             ),
     		'hierarchical' => true,
+            'show_ui' => true,
+            'show_admin_column' => true,
     		'query_var' => true,
-    		'show_admin_column' => true
+            'rewrite' => array( 'slug' => 'our-services' ),
     	) );
 }
 add_action( 'init', 'services_register_taxonomy' );
+
+
+// Shortcode for displaying custom taxonomy list
+function services_shortcode_list_taxonomy_terms($attributes)
+{
+    $attributes = shortcode_atts( array(
+        'taxonomy' => 'post_tag',
+        'orderby' => 'name',
+    ), $attributes );
+
+    $args = array(
+        'taxonomy' => $attributes['taxonomy'],
+        'orderby' => $attributes['orderby'],
+    );
+
+    $terms = get_categories($args);
+
+    $output = '';
+
+    // Exit if there are no terms
+    if (! $terms) {
+        return $output;
+    }
+
+    // Start list
+    $output .= '<div class="services-taxonomy-list"><ul>';
+
+    // Add terms
+    foreach($terms as $term) {
+        $output .= '<li>
+            <a href="'. get_term_link($term) .'">'. esc_html($term->cat_name) .'</a>
+            '. term_description($term) .'
+        </li>';
+    }
+
+    // End list
+    $output .= '</ul></div>';
+
+    return $output;
+}
+
+add_shortcode('taxonomy_terms', 'services_shortcode_list_taxonomy_terms');
 
 ?>

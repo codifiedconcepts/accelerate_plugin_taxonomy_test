@@ -25,9 +25,8 @@ get_header(); ?>
 
 	<section class="services">
 		<div class="site-content">
-			<?php// while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
-			<?php// endwhile; // end of the loop. ?>
+			<?php the_content(); ?>
+			<?php echo do_shortcode( '[taxonomy_terms taxonomy="servicescategory"]'); ?>
 			<div class="our-services">
 				<?php
 				// the query
@@ -43,7 +42,7 @@ get_header(); ?>
 							<aside class="about-service">
 								<h2><?php the_title(); ?></h2>
 								<p><?php the_content(); ?></p>
-								<p class="read-more-link"><?php the_terms( $post->ID, 'servicescategory' ); ?></p>
+								<div class="services-taxonomy-link"><?php the_terms( $post->ID, 'servicescategory' ); ?></div>
 							</aside>
 						</section>
 					<?php endwhile; ?>

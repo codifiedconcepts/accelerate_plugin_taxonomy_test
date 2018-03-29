@@ -177,6 +177,26 @@ nf-field input[type="button"] {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 1em 0;
 }
+
+.services-taxonomy-list {
+    margin: 0;
+    padding: 25px;
+    background: #eee;
+    border: solid 5px #45ac9d;
+}
+.services-taxonomy-list ul {
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+.services-taxonomy-list li:last-of-type p {
+    margin-bottom: 0;
+}
+.services-taxonomy-list a,
+.services-taxonomy-link a {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
 /*END About Page*/
 
 /* Sidebar */
