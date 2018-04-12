@@ -22,7 +22,7 @@ function create_services_post_types() {
             'has_archive' => false,
 			'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
             //'taxonomies' => array( 'post_tag', 'category' ),  //Comment out if you don't want Category and Tags as options and just add custom taxonomy below
-            //'rewrite' => array( 'slug' => 'our-services' ),
+            //'rewrite' => array( 'slug' => 'our-services' ),  //Custom types and taxonomies can't have the same slug; using slug with the registered taxonomy below
         )
     );
 }

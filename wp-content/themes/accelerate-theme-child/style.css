@@ -134,7 +134,7 @@ nf-field input[type="button"] {
 }
 /*END Contact Page */
 
-/*About Page*/
+/*About Page & Our Services Page*/
 .about-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right bottom / cover rgba(0, 0, 0, 0);
     height: auto;
@@ -153,6 +153,23 @@ nf-field input[type="button"] {
     font: 600 1.5em/1.75 'Open Sans', Arial, sans-serif;
 	color: #fff;
 }
+
+.ourservices-page .main-content {
+   width: 90%;
+   max-width: 960px;
+   margin: 0 auto;
+  }
+.ourservices-page h1 {
+    font: 600 2.5em/1.5 'Montserrat', 'Open Sans', Arial, sans-serif;
+    margin: 2em auto 1em;
+    text-align: center;
+}
+
+.page-header, .site-content, #navigation, .site-footer {
+   width: 90%;
+   max-width: 960px;
+   margin: 0 auto;
+  }
 
 .services .site-content {
     display: block;
